@@ -1,0 +1,46 @@
+{
+  "name": "NuxtTSTemplate",
+  "extensions": [
+    // General
+    "editorconfig.editorconfig",
+    "codezombiech.gitignore",
+    "eamodio.gitlens",
+    // Vue
+    "octref.vetur",
+    // Html
+    "formulahendry.auto-rename-tag",
+    "formulahendry.auto-close-tag",
+    // Vuetify
+    "vuetifyjs.vuetify-vscode",
+    // Firebase
+    "toba.vsfire",
+    // ESLint
+    "dbaeumer.vscode-eslint"
+  ],
+  "settings": {
+    "editor.formatOnSave": true,
+    "[javascript]": {
+      "editor.formatOnSave": false
+    },
+    "[typescript]": {
+      "editor.formatOnSave": false
+    },
+    "[vue]": {
+      "editor.formatOnSave": false
+    },
+    "editor.codeActionsOnSave": {
+      "source.fixAll": true
+    },
+    "eslint.validate": [
+      "javascript",
+      "typescript",
+      "vue",
+    ],
+    "vetur.format.defaultFormatter.html": "prettier",
+    "vetur.experimental.templateInterpolationService": true
+  },
+  // Docker-Compose
+  "dockerComposeFile": "../docker-compose.yml",
+  "service": "app",
+  "workspaceFolder": "/app"
+}

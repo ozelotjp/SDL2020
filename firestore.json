@@ -1,0 +1,48 @@
+{
+  // Collection
+  "cars": {
+    // Document
+    "52-452-52-752": {
+      "blinker": "OFF",
+      "compass": "NORTH",
+      "currentGroup": "52-452-52-752",
+      "position": [ // GetPoint
+        {
+          "latitude": 35.167742,
+          "longitude": 136.885264
+        }
+      ]
+    }
+  },
+  // Collection
+  "groups": {
+    // Document
+    "52-452-52-752": {
+      "cars": [
+        "hogehoge"
+      ],
+      "carsName": {
+        "52-452-52-752": "クワックワッ🦆"
+      },
+      "createdAt": "2020/08/02 14:34:41", // Timestamp
+      "name": "bbb新しいグル🦆",
+      "parent": "52-452-52-752"
+    }
+  },
+  // Collection
+  "users": {
+    // Document
+    "Zs62jVMICuTaApolNkHI0XSzeVq2": {
+      "name": "aaa",
+      "createdAt": "2020/08/01 00:00:00", // Timestamp
+      // SubCollection
+      "cars": {
+        // SubDocument
+        "52-452-52-752": {
+          "name": "かるがも号",
+          "createdAt": "2020/08/02 15:28:26" // Timestamp
+        }
+      }
+    }
+  }
+}
